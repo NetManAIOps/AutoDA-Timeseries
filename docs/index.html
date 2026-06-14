@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="AutoDA-Timeseries: Automated Data Augmentation for Time Series">
+  <meta property="og:title" content="AutoDA-Timeseries: Automated Data Augmentation for Time Series"/>
+  <meta property="og:description" content="A general-purpose automated data augmentation framework tailored for time series."/>
+  <meta property="og:url" content="https://netmanaiops.github.io/AutoDA-Timeseries/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/overall.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="AutoDA-Timeseries: Automated Data Augmentation for Time Series">
+  <meta name="twitter:description" content="A general-purpose automated data augmentation framework tailored for time series.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/overall.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="AutoDA-Timeseries, automated data augmentation, time series, machine learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>AutoDA-Timeseries: Automated Data Augmentation for Time Series</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };
+  </script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+              <h1 class="title is-1 publication-title">AutoDA-Timeseries: Automated Data Augmentation for Time Series</h1>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                              <span class="author-block">
+                  <a href="mailto:douzj25@mails.tsinghua.edu.cn" target="_blank">Zijun Dou</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Zhenhe Yao<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Zhe Xie<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Xidao Wen<sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  Tong Xiao<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  Dan Pei<sup>1</sup>
+                </span>
+              </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tsinghua University</span>
+                    <br>
+                    <span class="author-block"><sup>2</sup>Aliaba Cloud Computing Company</span>
+                    <br>
+                    <span class="author-block" style="color: #8d1617; font-size: 1.3em; font-weight: bold;">Accepted at ICLR 2026</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://openreview.net/forum?id=vTLmHAkoIW" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/NetManAIOps/AutoDA-Timeseries" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Model -->
+                  <!-- <span class="link-block">
+                      <a href="https://huggingface.co/hongxingli/SpatialLadder-3B" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                          <span style="vertical-align: middle;">Model</span>
+                      </a>
+                  </span> -->
+                
+                <!-- Data -->
+                  <!-- <span class="link-block">
+                      <a href="https://huggingface.co/datasets/hongxingli/SpatialLadder-26k" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                          <span style="vertical-align: middle;">Data</span>
+                      </a>
+                  </span> -->
+
+                <!-- Bench -->
+                  <!-- <span class="link-block">
+                      <a href="https://huggingface.co/datasets/hongxingli/SPBench" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon" style="vertical-align: middle; font-size: 20px;">&#129303;</span>
+                          <span style="vertical-align: middle;">Bench</span>
+                      </a>
+                  </span> -->
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Data augmentation is a fundamental technique in deep learning, widely applied in both representation learning and automated data augmentation (AutoDA). In representation learning, augmentations are used to construct contrastive views for learning task-agnostic embeddings, while in AutoDA the augmentations are directly optimized to improve downstream task performance. However, existing paradigms face critical limitations: representation learning relies on a two-stage scheme with limited adaptability, and current AutoDA frameworks are largely designed for image data, rendering them ineffective for capturing time series–specific features. To address these issues, we introduce AutoDA-Timeseries, the first general-purpose automated data augmentation framework tailored for time series. AutoDA-Timeseries incorporates time series features into augmentation policy design and adaptively optimizes both augmentation probability and intensity in a single-stage, end-to-end manner. We conduct extensive experiments on five mainstream tasks, including classification, long-term forecasting, short-term forecasting, regression, and anomaly detection, showing that AutoDA-Timeseries consistently outperforms strong baselines across diverse models and datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Representation Learning vs. AutoDA</h2>
+         <p>
+              <img src="static/images/representation_learning_autoda.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                Existing applications of data augmentation in time series analysis can be broadly categorized into two paradigms: <strong><i>representation learning</i></strong> and <strong><i>automated data augmentation (AutoDA)</i></strong>.
+                In the representation learning paradigm, augmentations are primarily used to construct positive and negative views for contrastive learning. An encoder is first optimized to learn task-agnostic representations by enforcing invariance across augmented views.
+                The learned representations are then transferred to downstream tasks through a separate fine-tuning stage. While effective for general-purpose representation learning, this two-stage pipeline implicitly assumes that downstream models can fully adapt to the pretrained representations, which may not hold for time series models whose inductive biases are closely tied to temporal dynamics and task-specific objectives.
+                In contrast, AutoDA follows a one-stage, task-aware optimization scheme, where augmentation strategies are jointly optimized with the downstream task. Instead of relying on fixed or manually designed transformations, AutoDA dynamically adjusts both the selection probability and transformation intensity during training. This joint optimization produces high-quality and diverse augmented samples that are explicitly tailored to the downstream objective, directly enhancing model performance across tasks such as classification, forecasting, regression, and anomaly detection.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">AutoDA-Timeseries Training Framework</h2>
+         <p>
+              <img src="static/images/model.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                A time series feature-aware augmented data generator is composed of multiple stacked <i>Augmentation Layers</i>, each of which is responsible for selecting and applying one of the available transformations. The <i>k</i>-th augmentation layer generates an augmentation policy consisting of (i) a series of probability indicating the likelihood of choosing transformation and (ii) a series of intensity to apply a chosen transformation. By stacking these augmentation layers, the framework can explore a variety of transformation sequences, allowing for more diverse and potentially useful augmented data. The final output augmented data is used to train a single downstream model in a single-stage, end-to-end manner, with a composite loss to update the parameters in the augmented data generator together with the downstream model.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Overall Comparison of AutoDA-Timeseries with Baselines</h2>
+         <p>
+              <img src="static/images/overall.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                  We compare AutoDA-Timeseries with three groups of baselines to ensure a comprehensive and fair evaluation. We use <i>NoAug</i> as the <strong>control group</strong>, which does not apply any augmentation. For <strong>representation learning</strong>, we adopt InfoTS, AutoTCL, and TS2Vec, which leverage data augmentation to construct contrastive views and learn task-agnostic representations in a two-stage manner. For <strong>automated data augmentation</strong>, we consider four state-of-the-art methods: RandAugment, UniformAugment, TrivialAugment, and A2Aug. The figure presents an overall comparison of AutoDA-Timeseries with the baselines across five time series tasks. We observe that AutoDA-Timeseries consistently achieves the best performance, covering the largest area in the radar plot.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Generalization Analysis</h2>
+          <p>
+              <img src="static/images/generalization.png" alt="MY ALT TEXT" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>
+                  To further examine the generalizability of AutoDA-Timeseries, we conduct transfer experiments across datasets. Specifically, we train the downstream model together with augmentation policies on ETTh1 and directly evaluate the trained model on ETTh2 and ETTm2, comparing with NoAug and UniformAugment baselines. As shown in the upper block (ETTh1 $\to$ ETTh2), AutoDA-Timeseries consistently outperforms the baselines across all forecasting horizons, achieving the lowest average MSE and MAE, which demonstrates that the models trained with our framework generalize well to datasets with similar distribution. In the setting of ETTh1 $\to$ ETTm2, where the source and target distributions differ substantially, the performance gap narrows, yet AutoDA-Timeseries remains competitive and clearly superior to UniformAugment. These results highlight that AutoDA-Timeseries not only enhances performance within a single dataset but also exhibits strong potential for cross-dataset generalization, validating its robustness and applicability in real-world scenarios.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Robustness under Limited Training Samples</h2>
+          <img src="static/images/robustness.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 60%;"/>
+          <h2 class="subtitle has-text-centered">
+            Performance comparison between NoAug and AutoDA-Timeseries under varying training dataset ratios.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Weight Distribution Analysis</h2>
+          <img src="static/images/weight_analysis.png" alt="MY ALT TEXT" style="max-width: 40%;"/>
+          <h2 class="subtitle has-text-centered">
+            Comparison of weight distributions between models trained without augmentation and with AutoDA-Timeseries.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Privacy Analysis</h2>
+          <img src="static/images/privacy_analysis.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            Reconstruction RMSE and time consumption to reconstruct the original time series.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Model Efficiency</h2>
+          <img src="static/images/efficiency.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 50%;"/>
+          <h2 class="subtitle has-text-centered">
+            Model Efficiency comparison across datasets.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Adaptive Augmentation Policy Visualization</h2>
+          <img src="static/images/adaptive_augmentation_policy.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            Top: operator distribution over training epochs. Bottom: entropy dynamics showing convergence in lower layers and diversity in higher layers.
+          </h2>
+        </div>
+
+        <div class="item is-flex is-flex-direction-column is-align-items-center">
+          <h2 class="title is-3">Feature-Space Consistency under Augmentation</h2>
+          <img src="static/images/feature_consistency_2.png" alt="MY ALT TEXT" style="margin-bottom: 0.5rem; max-width: 70%;"/>
+          <h2 class="subtitle has-text-centered">
+            The features of augmented data remain highly consistent with those of the raw data.
+          </h2>
+        </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{douautoda,
+        title={AutoDA-Timeseries: Automated Data Augmentation for Time Series},
+        author={Dou, Zijun and Yao, Zhenhe and Xie, Zhe and Wen, Xidao and Xiao, Tong and Pei, Dan},
+        booktitle={The Fourteenth International Conference on Learning Representations}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+
+  </body>
+  </html>

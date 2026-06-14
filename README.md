@@ -2,6 +2,8 @@
 
 This repository contains the cleaned AutoDA-Timeseries implementation for time-series data augmentation experiments.
 
+Project website: https://netmanaiops.github.io/AutoDA-Timeseries/
+
 ## Included
 
 - `autoaugment/AutoDA_Timeseries.py`: AutoDA-Timeseries augmentation policy.
